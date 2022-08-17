@@ -57,6 +57,7 @@
     font-style: inherit;
     background-color: #3a4856;
     transition: 0.75s;
+    transform: skewX(-8deg);
 }
 .descripcion{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -254,6 +255,11 @@ h3{
     height: auto;
     color: whitesmoke;
     text-align: center;
+}
+.footer i:hover{
+    color: black;
+    transform: translateY(-5px);
+    transition: 0.75s;
 }
 /* MOBILE FIRST USO DE GRID */
 
