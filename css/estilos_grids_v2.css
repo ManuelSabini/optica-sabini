@@ -83,11 +83,10 @@ body{
     flex-wrap: wrap;
 }
 section{
-    margin: 25px;
+/*     margin: 10px; */
 /* height: auto; */
-    width: fit-content;
     border: black solid 1px;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: whitesmoke;
     padding: 15px;
 }
@@ -103,22 +102,12 @@ h3{
     font-size: 120%;
 }
 .establecimiento{
-    flex-direction: column-reverse;
-    overflow: auto;
-}
-.establecimiento{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    margin: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/*     width: auto; */
     grid-area: establecimiento;
 }
 .establecimiento div{
-    height: 240px;
-    width: 360px;
+    width: 100%;
+    min-height: 300px;
 }
 .establecimiento .salaespera1{
     background-image: url("../assets/fotos/establecimiento/salaespera1.jpeg");
@@ -143,14 +132,15 @@ h3{
 .productosYServicios{
     grid-area: productosYServicios;
 }
-.productosYServicios ul{
-    margin-left: 20px;
-}
+/* .productosYServicios ul{
+        margin-left: 20px; 
+} */
 /* .establecimiento .div:hover{
     scale: 1.2;
 } */
 .promocionesBancarias{
     grid-area: promociones;
+/*     width: fit-content; */
 }
 .promocionesBancarias .imgdesc{
     display: flex;
@@ -159,7 +149,7 @@ h3{
     justify-content: center;
 }
 .promocionesBancarias .descuentos{
-    margin: 25px;
+/*     margin: 10px; */
     border: 1px solid black;
     display: flex;
     flex-wrap: nowrap;
@@ -176,11 +166,6 @@ h3{
 #banco_icbc{
     background-image: url("../assets/fotos/promociones/icbc.png");
 }
-/* .promocionesBancarias img:hover{
-    scale: 2.5;
-    margin-bottom: 200px;
-    margin-left:200px;
-} */
 .productos article{
     overflow: scroll;
 }
@@ -232,6 +217,22 @@ h3{
 #titulo_accesorios{
     grid-area: titulo_accesorios;
 }
+.nosotros{
+    height: auto;
+    width: fit-content;
+    border: black solid 1px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    padding: 15px;
+    display: block;
+}
+.nosotros img{
+    align-items: center;
+}
+.servicios div{
+    display: flex;
+    flex-direction: column;
+}
 .footer{
     /*     width: 100vw;
     height: 100vh; */
@@ -263,7 +264,7 @@ h3{
 }
 /* MOBILE FIRST USO DE GRID */
 
-@media only screen and (min-width:769px){
+/* @media only screen and (min-width:769px){
     .inicio{
         display: grid;
         grid-template-columns: 1fr;
@@ -275,7 +276,7 @@ h3{
     .mainInicio{
         display:grid;
         grid-template-columns: 3fr 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "establecimiento promociones"
         "productosYServicios promociones";
     }
@@ -295,4 +296,4 @@ h3{
         "titulo_lentesRecetados accesorios"
         "lentesRecetados accesorios";
     }
-}
+} */

@@ -10,12 +10,13 @@
     <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos_grids_v2.css">
     <title>Optica LUZ</title>
 </head>
 <body class="inicio">
     <!--El Header consta de un logo y el nombre del negocio. Al hacer click sobre el logo se vuelve al inicio, tambien es posible navegar entre las paginas del sitio-->
-    <header class="header">
+    <header class="header container-fluid">
         <a href="#" class="logo animate__fadeInLeft animate__animated animate__slow"><img src="./assets/logos/logo.jpeg" alt="logo" height="100" width="100" /></a>
         <h1 class="titulo animate__fadeInLeft animate__animated animate__slow"><strong>Optica LUZ</strong></h1>
         <nav class="barraNavegacion">
@@ -29,50 +30,76 @@
         </nav>
     </header>
     <!-- Contenido de la pagina -->
-    <main class="mainInicio">
-        <!--Fotos del establecimiento , la idea es ponerlas en un carrusel despues-->
-        <section title="local" class="establecimiento">
-            <div class="salaespera1">
-            </div>
-            <div class="estante2">
-            </div>
-            <div class="frente">
-            </div>
-            <div class="consultorio">
-            </div>
-        </section>
-        <!--Listado de servicios-->
-        <section title="productosYServicios" class="productosYServicios">
-            <h3>Productos y Servicios</h3>
-            <ul>
-                <li>Lentes de Sol</li>
-                <li>Lentes Recetados</li>
-                <li>Lentes de contacto</li>
-                <li>Binoculares</li>
-                <li>Lupas</li>
-                <li>Soluciones para limpieza y mantenimiento de lentes de contacto</li>
-                <li>Protesis oculares</li>
-                <li>Accesorios</li>
-            </ul>
-        </section>
-        <!--Promociones bancarias-->
-        <section titles="promocionesBancarias" class="promocionesBancarias">
-            <h3>Promociones Bancarias</h3>
-            <div class="imgdesc">
-                <div class="descuentos" id="banco_provincia">
+    <main class="mainInicio container">
+        <!--Fotos del establecimiento , CARRUSEL-->
+        <div class="row">
+            <section title="local" class="establecimiento col-md-6">
+                <div id="demo" class="carousel slide container-fluid" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active salaespera1">
+                        </div>
+                        <div class="carousel-item estante2">
+                        </div>
+                        <div class="carousel-item frente">
+                        </div>
+                        <div class="carousel-item consultorio">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+            </section>
+            <!--Listado de servicios-->
+            <section title="productosYServicios" class="productosYServicios col-md-6 ">
+                <h3>Productos y Servicios</h3>
+                <ul>
+                    <li>Lentes de Sol</li>
+                    <li>Lentes Recetados</li>
+                    <li>Lentes de contacto</li>
+                    <li>Binoculares</li>
+                    <li>Lupas</li>
+                    <li>Soluciones para limpieza y mantenimiento de lentes de contacto</li>
+                    <li>Protesis oculares</li>
+                    <li>Accesorios</li>
+                </ul>
+            </section>
+        </div>
+        <div class="row">
+            <!--Promociones bancarias-->
+            <section titles="promocionesBancarias" class="promocionesBancarias container-fluid ">
+                <h3>Promociones Bancarias</h3>
+                <div class="imgdesc">
+                    <div class="descuentos" id="banco_provincia">
+                    </div>
+                    <div class="descuentos" id="banco_icbc">
+                    </div>
                 </div>
-                <div class="descuentos" id="banco_icbc">
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <!--Footer con enlaces a redes sociales-->
-    <footer class="footer">
+    <footer class="footer container-fluid">
         <a href="https://www.instagram.com/opticaLUZ/" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://www.facebook.com/OpticaLUZ" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://wa.me/5492345509226" target="_blank"><i class="bi bi-whatsapp"></i></a>
         <a href="mailto:laboratorioLUZ@hotmail.com?" target="_blank"><i class="bi bi-envelope"></i></a>
         <p>&#174;Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
