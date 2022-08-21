@@ -232,6 +232,14 @@ h3{
 #titulo_accesorios{
     grid-area: titulo_accesorios;
 }
+.nosotros{
+    height: auto;
+    border: black solid 1px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    padding: 15px;
+    display: block;
+}
 .servicios section{
     padding-left: 30px;
 }
