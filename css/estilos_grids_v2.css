@@ -83,7 +83,7 @@ body{
     flex-wrap: wrap;
 }
 section{
-    margin: 25px;
+/*     margin: 25px; */
 /* height: auto; */
     width: fit-content;
     border: black solid 1px;
