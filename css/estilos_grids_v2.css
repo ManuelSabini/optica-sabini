@@ -56,8 +56,8 @@
     color: black;
     font-style: inherit;
     background-color: #3a4856;
-    transition: 0.75s;
-    transform: skewX(-8deg);
+    transition: 0.5s;
+    transform: skewX(-5deg) translateY(2px);
 }
 .descripcion{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,11 +83,11 @@ body{
     flex-wrap: wrap;
 }
 section{
-/*     margin: 25px; */
+    margin: 0px;
 /* height: auto; */
-    width: fit-content;
+/*     width: fit-content; */
     border: black solid 1px;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: whitesmoke;
     padding: 15px;
 }
@@ -102,23 +102,23 @@ h3{
     padding: 10px;
     font-size: 120%;
 }
-.establecimiento{
+/* .establecimiento{
     flex-direction: column-reverse;
     overflow: auto;
-}
+} */
 .establecimiento{
     width: auto;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    margin: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/*     display: flex; */
+/*     flex-direction: row; */
+/*     align-self: center; */
+/*     margin: 10px; */
+/*     flex-wrap: wrap; */
+/*     justify-content: space-around; */
     grid-area: establecimiento;
 }
 .establecimiento div{
-    height: 240px;
-    width: 360px;
+    min-width: 220px;
+    min-height: 360px;
 }
 .establecimiento .salaespera1{
     background-image: url("../assets/fotos/establecimiento/salaespera1.jpeg");
@@ -286,7 +286,7 @@ h3{
     .mainInicio{
         display:grid;
         grid-template-columns: 3fr 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "establecimiento promociones"
         "productosYServicios promociones";
     }
