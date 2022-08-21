@@ -232,6 +232,9 @@ h3{
 #titulo_accesorios{
     grid-area: titulo_accesorios;
 }
+.servicios section{
+    padding-left: 30px;
+}
 .footer{
     /*     width: 100vw;
     height: 100vh; */
