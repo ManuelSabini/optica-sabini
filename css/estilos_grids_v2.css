@@ -56,8 +56,8 @@
     color: black;
     font-style: inherit;
     background-color: #3a4856;
-    transition: 0.75s;
-    transform: skewX(-8deg);
+    transition: 0.5s;
+    transform: skewX(-5deg) translateY(2px);
 }
 .descripcion{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -66,7 +66,8 @@
 body{
 /*     width: 100vw;
     height: 100%; */
-    background-color: #eed8cb;
+/*     background-color: #eed8cb; */
+    background-color: rgb(199, 191, 191);
     background-repeat: none;
 /*     position: relative;
     min-height: 100vh; */
@@ -83,11 +84,11 @@ body{
     flex-wrap: wrap;
 }
 section{
-    margin: 25px;
+    margin: 0px;
 /* height: auto; */
-    width: fit-content;
+/*     width: fit-content; */
     border: black solid 1px;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: whitesmoke;
     padding: 15px;
 }
@@ -102,23 +103,23 @@ h3{
     padding: 10px;
     font-size: 120%;
 }
-.establecimiento{
+/* .establecimiento{
     flex-direction: column-reverse;
     overflow: auto;
-}
+} */
 .establecimiento{
     width: auto;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    margin: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/*     display: flex; */
+/*     flex-direction: row; */
+/*     align-self: center; */
+/*     margin: 10px; */
+/*     flex-wrap: wrap; */
+/*     justify-content: space-around; */
     grid-area: establecimiento;
 }
 .establecimiento div{
-    height: 240px;
-    width: 360px;
+    min-width: 220px;
+    min-height: 360px;
 }
 .establecimiento .salaespera1{
     background-image: url("../assets/fotos/establecimiento/salaespera1.jpeg");
@@ -205,6 +206,12 @@ h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 50px;
 }
+.jumbotron{
+    padding-bottom: 5rem;
+    padding-top: 0rem;
+    background-color: #4c5967;
+    color: white;
+}
 .productos{
     display: block;
 }/* 
@@ -212,7 +219,7 @@ h3{
     justify-content: space-between;
 } */
 .lentesDeSol div, .lentesRecetados div, .accesorios div{
-    height:250px ;
+/*     height:285px ; */
     width: 250px;
 /*     flex-wrap: nowrap; */
 /*     margin-inline: 80px; */
@@ -222,6 +229,9 @@ h3{
     border: gray solid 1px;
     background-color: whitesmoke;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 #titulo_productos{
     grid-area: titulo_productos;
@@ -231,6 +241,17 @@ h3{
 }
 #titulo_accesorios{
     grid-area: titulo_accesorios;
+}
+.nosotros{
+    height: auto;
+    border: black solid 1px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    padding: 15px;
+    display: block;
+}
+.servicios section{
+    padding-left: 30px;
 }
 .footer{
     /*     width: 100vw;
@@ -248,6 +269,7 @@ h3{
 }
 .footer p{
     padding-top: 8px;
+    margin-bottom: 0px;
 }
 .footer i{
     display: inline-block;
@@ -275,7 +297,7 @@ h3{
     .mainInicio{
         display:grid;
         grid-template-columns: 3fr 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "establecimiento promociones"
         "productosYServicios promociones";
     }
