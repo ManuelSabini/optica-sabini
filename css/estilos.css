@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  background-color: #3b8ac3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.header .titulo {
+  color: whitesmoke;
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  width: 100wh;
+}
+.header .logo img {
+  border-radius: 50%;
+}
+.header .titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.barraNavegacion ul {
+  background-color: #3b8ac3;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+.barraNavegacion ul li {
+  display: inline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+}
+.barraNavegacion ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #3b8ac3;
+  border: black solid 1px;
+  border-radius: 0px;
+  padding: 5px;
+  display: inline-block;
+}
+.barraNavegacion ul li a:hover {
+  color: black;
+  font-style: inherit;
+  background-color: #3a4856;
+  transition: 0.5s;
+  transform: skewX(-5deg) translateY(2px);
+}
+
+body {
+  background-color: rgb(199, 191, 191);
+  background-repeat: none;
+}
+
+section {
+  margin: 0px;
+  border: black solid 1px;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.mainInicio {
+  grid-area: mainInicio;
+}
+.mainInicio .establecimiento {
+  width: auto;
+  grid-area: establecimiento;
+}
+.mainInicio .establecimiento div {
+  min-width: 220px;
+  min-height: 360px;
+}
+.mainInicio .establecimiento .salaespera1 {
+  background-image: url("../assets/fotos/establecimiento/salaespera1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.mainInicio .establecimiento .estante2 {
+  background-image: url("../assets/fotos/establecimiento/estante2.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.mainInicio .establecimiento .frente {
+  background-image: url("../assets/fotos/establecimiento/frente.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.mainInicio .establecimiento .consultorio {
+  background-image: url("../assets/fotos/establecimiento/consultorio.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.mainInicio .productosYServicios {
+  grid-area: productosYServicios;
+}
+.mainInicio .productosYServicios ul {
+  margin-left: 20px;
+}
+.mainInicio .promocionesBancarias {
+  grid-area: promociones;
+}
+.mainInicio .promocionesBancarias .imgdesc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.mainInicio .promocionesBancarias .descuentos {
+  margin: 25px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 225px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.dondeEncontrarnos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px;
+}
+
+h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  font-size: 120%;
+}
+
+.jumbotron {
+  padding-bottom: 5rem;
+  padding-top: 0rem;
+  background-color: #4c5967;
+  color: white;
+}
+
+.productos {
+  display: block;
+}
+.productos h3 {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 50px;
+}
+.productos article {
+  overflow: scroll;
+}
+.productos .lentesDeSol, .productos .lentesRecetados, .productos .accesorios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.productos .lentesDeSol div, .productos .lentesRecetados div, .productos .accesorios div {
+  width: 250px;
+  margin: 10px;
+  width: fit-content;
+  border: gray solid 1px;
+  background-color: whitesmoke;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.productos .lentesDeSol {
+  grid-area: lentesDeSol;
+}
+.productos .lentesDeRecetados {
+  grid-area: lentesRecetados;
+}
+.productos .accesorios {
+  grid-area: accesorios;
+  flex-direction: column;
+}
+
+#titulo_productos {
+  grid-area: titulo_productos;
+}
+
+#titulo_lentesRecetados {
+  grid-area: titulo_lentesRecetados;
+}
+
+#titulo_accesorios {
+  grid-area: titulo_accesorios;
+}
+
+.nosotros {
+  height: auto;
+  border: black solid 1px;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  padding: 15px;
+  display: block;
+}
+
+.servicios section {
+  padding-left: 30px;
+}
+
+#banco_provincia {
+  background-image: url("../assets/fotos/promociones/banco_provincia.png");
+}
+
+#banco_icbc {
+  background-image: url("../assets/fotos/promociones/icbc.png");
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #3b8ac3;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+.footer a {
+  padding: 8px;
+}
+.footer p {
+  padding-top: 8px;
+  margin-bottom: 0px;
+}
+.footer i {
+  display: inline-block;
+  font-size: xx-large;
+  height: auto;
+  color: whitesmoke;
+  text-align: center;
+}
+.footer i:hover {
+  color: black;
+  transform: translateY(-5px);
+  transition: 0.75s;
+}
+
+@media only screen and (min-width: 769px) {
+  .inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px auto 125px;
+    grid-template-areas: "header" "mainInicio" "footer";
+  }
+  .mainInicio {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "establecimiento promociones" "productosYServicios promociones";
+  }
+  .accesorios {
+    flex-direction: column;
+  }
+  .productos article {
+    overflow: auto;
+  }
+  .productos {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80px 40px 1fr 40px 1fr;
+    grid-template-areas: "titulo_productos titulo_accesorios" "titulo_lentesDeSol accesorios" "lentesDeSol accesorios" "titulo_lentesRecetados accesorios" "lentesRecetados accesorios";
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
