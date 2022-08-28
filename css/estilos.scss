@@ -57,6 +57,9 @@
 }
 body{
     background-color: rgb(199, 191, 191);
+/*     background-image: url(../assets/background/background-2551501_1920.jpg);
+    background-position: center;
+    background-size: cover; */
     background-repeat: none;
 }
 section{
@@ -75,23 +78,38 @@ section{
             min-width: 220px;
             min-height: 360px;
         }
-        .salaespera1{
-            background-image: url("../assets/fotos/establecimiento/salaespera1.jpeg");
+        .perro{
+            background-image: url("../assets/fotos/establecimiento/bordeaux-dog-217018_1280.jpg");
             background-position: center;
             background-size: cover;
         }
-        .estante2{
-            background-image: url("../assets/fotos/establecimiento/estante2.jpeg");
+        .nene{
+            background-image: url("../assets/fotos/establecimiento/kid-1508121_1920.jpg");
             background-position: center;
             background-size: cover;
         }
-        .frente{
-            background-image: url("../assets/fotos/establecimiento/frente.jpeg");
+        .amigas{
+            background-image: url("../assets/fotos/establecimiento/people-2596150_1920.jpg");
             background-position: center;
             background-size: cover;
         }
-        .consultorio{
-            background-image: url("../assets/fotos/establecimiento/consultorio.jpeg");
+        .hombre1{
+            background-image: url("../assets/fotos/establecimiento/eyeglasses-1866734_1920.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .hombre2{
+            background-image: url("../assets/fotos/establecimiento/happy-1836445_1920.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .mujer1{
+            background-image: url("../assets/fotos/establecimiento/woman-1869116_1920.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .anteojoslibro{
+            background-image: url("../assets/fotos/establecimiento/glasses-1052023_1920.jpg");
             background-position: center;
             background-size: cover;
         }
@@ -102,6 +120,30 @@ section{
             margin-left: 20px;
         }
     }
+    .masFotosinicio{
+        grid-area: masFotos;
+    }
+#foto1{
+    width: 100%;
+    height: calc(100%/3);
+    background-image: url("../assets/fotos/establecimiento/lens-4818786_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#foto2{
+    width: 100%;
+    height: calc(100%/3);
+    background-image: url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#foto3{
+    width: 100%;
+    height: calc(100%/3);
+    background-image: url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
     .promocionesBancarias{
         grid-area: promociones;
         .imgdesc{
@@ -253,10 +295,10 @@ h3{
     }
     .mainInicio{
         display:grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "establecimiento promociones"
-        "productosYServicios promociones";
+        grid-template-areas: "establecimiento establecimiento promociones"
+        "productosYServicios masFotos promociones";
     }
     .accesorios{
         flex-direction: column;
