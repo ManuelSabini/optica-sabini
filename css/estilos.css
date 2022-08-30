@@ -58,18 +58,18 @@
 
 body {
   background-color: rgb(199, 191, 191);
-  /*     background-image: url(../assets/background/background-2551501_1920.jpg);
-      background-position: center;
-      background-size: cover; */
+  background-image: url(../assets/background/background-2551501_1920.jpg);
+  background-position: center;
+  background-size: cover;
   background-repeat: none;
 }
 
 section {
-  margin: 0px;
   border: black solid 1px;
   border-radius: 3px;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.5);
   padding: 15px;
+  margin: 5px;
 }
 
 .mainInicio {
@@ -130,6 +130,7 @@ section {
 .mainInicio #foto1 {
   width: 100%;
   height: 33.3333333333%;
+  min-height: 120px;
   background-image: url("../assets/fotos/establecimiento/lens-4818786_1920.jpg");
   background-position: center;
   background-size: cover;
@@ -137,6 +138,7 @@ section {
 .mainInicio #foto2 {
   width: 100%;
   height: 33.3333333333%;
+  min-height: 120px;
   background-image: url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
   background-position: center;
   background-size: cover;
@@ -144,6 +146,7 @@ section {
 .mainInicio #foto3 {
   width: 100%;
   height: 33.3333333333%;
+  min-height: 120px;
   background-image: url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg");
   background-position: center;
   background-size: cover;
@@ -168,12 +171,11 @@ section {
   background-size: cover;
 }
 
-.dondeEncontrarnos {
+.dondeEncontrarnos .row {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -215,15 +217,20 @@ h3 {
   flex-wrap: nowrap;
 }
 .productos .lentesDeSol div, .productos .lentesRecetados div, .productos .accesorios div {
-  width: 250px;
+  width: 260px;
+  height: 320px;
   margin: 10px;
-  width: fit-content;
   border: gray solid 1px;
-  background-color: whitesmoke;
+  background-color: rgb(219, 219, 219);
   padding: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+.productos .lentesDeSol div .miniatura, .productos .lentesRecetados div .miniatura, .productos .accesorios div .miniatura {
+  width: 230px;
+  height: 150px;
+  margin: 0;
 }
 .productos .lentesDeSol {
   grid-area: lentesDeSol;
@@ -267,6 +274,54 @@ h3 {
 
 #banco_icbc {
   background-image: url("../assets/fotos/promociones/icbc.png");
+}
+
+#producto1 {
+  background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#producto2 {
+  background-image: url("../assets/fotos/productos/mara-lente-sol.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+#producto3 {
+  background-image: url("../assets/fotos/productos/valdez-receta.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#producto4 {
+  background-image: url("../assets/fotos/productos/valdes-receta.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#producto5 {
+  background-image: url("../assets/fotos/productos/union_pacific_receta.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#producto6 {
+  background-image: url("../assets/fotos/productos/lentes-litio.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#producto7 {
+  background-image: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#producto8 {
+  background-image: url("../assets/fotos/productos/cordones.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
