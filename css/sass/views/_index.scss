@@ -1,0 +1,63 @@
+.mainInicio{
+    grid-area: mainInicio;
+    @import "../components/carrusel";
+}
+    .productosYServicios{
+        grid-area: productosYServicios;
+        ul{
+            margin-left: 20px;
+        }
+    }
+    .masFotosinicio{
+        grid-area: masFotos;
+    }
+#foto1{
+    width: 100%;
+    height: calc(100%/3);
+    min-height: 120px;
+    background-image: url("../assets/fotos/establecimiento/lens-4818786_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#foto2{
+    width: 100%;
+    height: calc(100%/3);
+    min-height: 120px;
+    background-image: url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#foto3{
+    width: 100%;
+    height: calc(100%/3);
+    min-height: 120px;
+    background-image: url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.promocionesBancarias{
+    grid-area: promociones;
+    .imgdesc{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .descuentos{
+        margin: 25px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: nowrap;
+        height: 225px;
+        width: 300px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+#banco_provincia{
+    background-image: url("../assets/fotos/promociones/banco_provincia.png");
+}
+#banco_icbc{
+    background-image: url("../assets/fotos/promociones/icbc.png");
+}

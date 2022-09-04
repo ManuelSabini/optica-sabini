@@ -1,0 +1,26 @@
+.footer{
+    grid-area: footer;
+    background-color: $color1;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 10px;
+    a{
+        padding: 8px;
+    }
+    p{
+        padding-top: 8px;
+        margin-bottom: 0px;
+    }
+    i{
+        display: inline-block;
+        font-size: xx-large;
+        height: auto;
+        color: $color2;
+        text-align: center;
+        &:hover{
+            color: black;
+            transform: translateY(-5px);
+            transition: 0.75s;
+        }
+    }
+}

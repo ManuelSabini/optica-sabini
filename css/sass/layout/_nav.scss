@@ -1,0 +1,29 @@
+.barraNavegacion{
+    ul{
+        background-color: $color1;
+        padding-top: 25px;
+        padding-left: 10px;
+        li{
+            display: inline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            text-decoration: none;
+            a{
+                text-decoration: none;
+                color: $color2;
+                background-color: $color1;
+                border: black solid 1px;
+                border-radius: 0px;
+                padding: 5px;
+                display: inline-block;
+            &:hover{
+                color: black;
+                font-style: inherit;
+                background-color: #3a4856;
+                transition: 0.5s;
+                transform: skewX(-5deg) translateY(2px);
+                }
+            }
+        }
+    }
+}

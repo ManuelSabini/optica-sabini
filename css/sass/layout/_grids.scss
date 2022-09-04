@@ -1,0 +1,34 @@
+@media only screen and (min-width:769px){
+    .inicio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px auto 125px;
+        grid-template-areas: "header"
+        "mainInicio"
+        "footer";
+    }
+    .mainInicio{
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "establecimiento establecimiento promociones"
+        "productosYServicios masFotos promociones";
+    }
+    .accesorios{
+        flex-direction: column;
+    }
+    .productos{
+        article{
+            overflow:auto;}
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 80px 40px 1fr 40px 1fr;
+        grid-template-areas: "titulo_productos titulo_accesorios"
+        "titulo_lentesDeSol accesorios"
+        "lentesDeSol accesorios"
+        "titulo_lentesRecetados accesorios"
+        "lentesRecetados accesorios";
+    }
+}

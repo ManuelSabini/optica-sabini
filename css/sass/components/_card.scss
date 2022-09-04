@@ -1,0 +1,16 @@
+div{
+    width: 260px;
+    height: 320px;
+    margin: 10px;
+    border: gray solid 1px;
+    background-color: rgb(219, 219, 219);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .miniatura{
+        width: 230px;
+        height: 150px;
+        margin: 0;
+    }
+}
