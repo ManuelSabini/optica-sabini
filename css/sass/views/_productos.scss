@@ -1,16 +1,22 @@
+/* Importo Jumbotron */
+@import "../components/jumbotron";
+
 .productos{
     display: block;
+    h2{
+        @extend .jumbotron-h2;
+        font-size: xx-large;
+    }
     h3{
-        text-align: left;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-left: 50px;
+        @extend .jumbotron-h3;
+        font-size: x-large;
     }
     article{
         overflow: scroll;
     }
     .lentesDeSol, .lentesRecetados, .accesorios{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
         @import "../components/card";
@@ -35,6 +41,3 @@
 #titulo_accesorios{
     grid-area: titulo_accesorios;
 }
-
-/* Importo Jumbotron */
-@import "../components/jumbotron";

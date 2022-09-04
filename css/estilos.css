@@ -63,7 +63,7 @@
 
 /* Body y algunas definiciones comunes a todas las paginas del sitio */
 body {
-  background-color: rgb(199, 191, 191);
+  /* background-color: rgb(199, 191, 191); */
   background-image: url(../assets/background/background-2551501_1920.jpg);
   background-position: center;
   background-size: cover;
@@ -73,7 +73,7 @@ body {
 section {
   border: black solid 1px;
   border-radius: 3px;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(245, 245, 245, 0.3);
   padding: 15px;
   margin: 5px;
 }
@@ -216,20 +216,39 @@ h3 {
 }
 
 /* Contenido de pagina productos */
+/* Importo Jumbotron */
+.jumbotron-h2, .productos h2 {
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  background-color: #3b4856;
+  color: whitesmoke;
+}
+
+.jumbotron-h3, .productos h3 {
+  text-align: left;
+  font-family: Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  background-color: #4c5967;
+  color: whitesmoke;
+}
+
 .productos {
   display: block;
 }
+.productos h2 {
+  font-size: xx-large;
+}
 .productos h3 {
-  text-align: left;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: 50px;
+  font-size: x-large;
 }
 .productos article {
   overflow: scroll;
 }
 .productos .lentesDeSol, .productos .lentesRecetados, .productos .accesorios {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
   /* Aca mediante MAPS y EXTEND vamos a definir a todos los productos */
@@ -279,7 +298,7 @@ h3 {
   height: 320px;
   margin: 10px;
   border: gray solid 1px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgba(245, 245, 245, 0.45);
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -337,14 +356,6 @@ h3 {
 
 #titulo_accesorios {
   grid-area: titulo_accesorios;
-}
-
-/* Importo Jumbotron */
-.jumbotron {
-  padding-bottom: 5rem;
-  padding-top: 0rem;
-  background-color: #4c5967;
-  color: white;
 }
 
 /* Contenido de pagina servicios */
@@ -411,10 +422,25 @@ h3 {
   }
   .productos {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 80px 40px 1fr 40px 1fr;
-    grid-template-areas: "titulo_productos titulo_accesorios" "titulo_lentesDeSol accesorios" "lentesDeSol accesorios" "titulo_lentesRecetados accesorios" "lentesRecetados accesorios";
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 110px 1fr 110px 1fr 110px 1fr;
+    grid-template-areas: "titulo_productos" "titulo_lentesDeSol" "lentesDeSol" "titulo_lentesRecetados" "lentesRecetados" "titulo_accesorios" "accesorios";
   }
+  .productos .lentesDeSol, .productos .lentesRecetados, .productos .accesorios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /*     .jumbotron-h2{
+          padding-bottom: 5rem;
+          padding-top: 1rem;
+      }
+      .jumbotron-h3{
+          padding-left: 10px;
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+      } */
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,6 +1,15 @@
-.jumbotron{
+.jumbotron-h2{
     padding-bottom: 5rem;
-    padding-top: 0rem;
-    background-color: #4c5967;
-    color: white;
+    padding-top: 1rem;
+    background-color: $colorjumbotron-h2;
+    color: $color2;
+}
+.jumbotron-h3{
+    text-align: left;
+    font-family: Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: $colorjumbotron-h3;
+    color: $color2;
 }
