@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reseteo y constantes */
 * {
   padding: 0;
@@ -149,31 +150,32 @@ h3 {
   grid-area: masFotos;
 }
 
+/* Se añade Mixin */
 #foto1 {
   width: 100%;
   height: 33.3333333333%;
   min-height: 120px;
-  background-image: url("../assets/fotos/establecimiento/lens-4818786_1920.jpg");
   background-position: center;
   background-size: cover;
+  background-image: url("../assets/fotos/establecimiento/lens-4818786_1920.jpg");
 }
 
 #foto2 {
   width: 100%;
   height: 33.3333333333%;
   min-height: 120px;
-  background-image: url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
   background-position: center;
   background-size: cover;
+  background-image: url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
 }
 
 #foto3 {
   width: 100%;
   height: 33.3333333333%;
   min-height: 120px;
-  background-image: url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg");
   background-position: center;
   background-size: cover;
+  background-image: url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg");
 }
 
 .promocionesBancarias {
@@ -230,6 +232,47 @@ h3 {
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
+  /* Aca mediante MAPS y EXTEND vamos a definir a todos los productos */
+  /* #producto1{
+      background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  #producto2{
+      background-image: url("../assets/fotos/productos/mara-lente-sol.webp");
+      background-position: center;
+      background-size: cover;
+  }
+  #producto3{
+      background-image: url("../assets/fotos/productos/valdez-receta.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  #producto4{
+      background-image: url("../assets/fotos/productos/valdes-receta.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  #producto5{
+      background-image: url("../assets/fotos/productos/union_pacific_receta.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  #producto6{
+      background-image: url("../assets/fotos/productos/lentes-litio.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  #producto7{
+      background-image: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  #producto8{
+      background-image: url("../assets/fotos/productos/cordones.jpg");
+      background-position: center;
+      background-size: cover;
+  } */
 }
 .productos .lentesDeSol div, .productos .lentesRecetados div, .productos .accesorios div {
   width: 260px;
@@ -242,10 +285,36 @@ h3 {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.productos .lentesDeSol div .miniatura, .productos .lentesRecetados div .miniatura, .productos .accesorios div .miniatura {
+.productos .lentesDeSol div .miniatura, .productos .lentesDeSol div #producto8, .productos .lentesDeSol div #producto7, .productos .lentesDeSol div #producto6, .productos .lentesDeSol div #producto5, .productos .lentesDeSol div #producto4, .productos .lentesDeSol div #producto3, .productos .lentesDeSol div #producto2, .productos .lentesDeSol div #producto1, .productos .lentesRecetados div .miniatura, .productos .lentesRecetados div #producto8, .productos .lentesRecetados div #producto7, .productos .lentesRecetados div #producto6, .productos .lentesRecetados div #producto5, .productos .lentesRecetados div #producto4, .productos .lentesRecetados div #producto3, .productos .lentesRecetados div #producto2, .productos .lentesRecetados div #producto1, .productos .accesorios div .miniatura, .productos .accesorios div #producto8, .productos .accesorios div #producto7, .productos .accesorios div #producto6, .productos .accesorios div #producto5, .productos .accesorios div #producto4, .productos .accesorios div #producto3, .productos .accesorios div #producto2, .productos .accesorios div #producto1 {
   width: 230px;
   height: 150px;
   margin: 0;
+  background-position: center;
+  background-size: cover;
+}
+.productos .lentesDeSol #producto1, .productos .lentesRecetados #producto1, .productos .accesorios #producto1 {
+  background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
+}
+.productos .lentesDeSol #producto2, .productos .lentesRecetados #producto2, .productos .accesorios #producto2 {
+  background-image: url("../assets/fotos/productos/mara-lente-sol.webp");
+}
+.productos .lentesDeSol #producto3, .productos .lentesRecetados #producto3, .productos .accesorios #producto3 {
+  background-image: url("../assets/fotos/productos/valdez-receta.jpg");
+}
+.productos .lentesDeSol #producto4, .productos .lentesRecetados #producto4, .productos .accesorios #producto4 {
+  background-image: url("../assets/fotos/productos/valdes-receta.jpg");
+}
+.productos .lentesDeSol #producto5, .productos .lentesRecetados #producto5, .productos .accesorios #producto5 {
+  background-image: url("../assets/fotos/productos/union_pacific_receta.jpg");
+}
+.productos .lentesDeSol #producto6, .productos .lentesRecetados #producto6, .productos .accesorios #producto6 {
+  background-image: url("../assets/fotos/productos/lentes-litio.jpg");
+}
+.productos .lentesDeSol #producto7, .productos .lentesRecetados #producto7, .productos .accesorios #producto7 {
+  background-image: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg");
+}
+.productos .lentesDeSol #producto8, .productos .lentesRecetados #producto8, .productos .accesorios #producto8 {
+  background-image: url("../assets/fotos/productos/cordones.jpg");
 }
 .productos .lentesDeSol {
   grid-area: lentesDeSol;
@@ -268,54 +337,6 @@ h3 {
 
 #titulo_accesorios {
   grid-area: titulo_accesorios;
-}
-
-#producto1 {
-  background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#producto2 {
-  background-image: url("../assets/fotos/productos/mara-lente-sol.webp");
-  background-position: center;
-  background-size: cover;
-}
-
-#producto3 {
-  background-image: url("../assets/fotos/productos/valdez-receta.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#producto4 {
-  background-image: url("../assets/fotos/productos/valdes-receta.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#producto5 {
-  background-image: url("../assets/fotos/productos/union_pacific_receta.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#producto6 {
-  background-image: url("../assets/fotos/productos/lentes-litio.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#producto7 {
-  background-image: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#producto8 {
-  background-image: url("../assets/fotos/productos/cordones.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 /* Importo Jumbotron */
