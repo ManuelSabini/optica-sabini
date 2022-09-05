@@ -21,16 +21,10 @@
         article{
             overflow:auto;}
     }
-    .productos{
+/*     .productos{
         display: grid;
-        .lentesDeSol, .lentesRecetados, .accesorios{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: nowrap;
-        }
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 110px 1fr 110px 1fr 110px 1fr;
+        grid-template-rows: 150px 80px auto 80px auto 80px auto;
         grid-template-areas: "titulo_productos"
         "titulo_lentesDeSol"
         "lentesDeSol"
@@ -38,14 +32,11 @@
         "lentesRecetados"
         "titulo_accesorios"
         "accesorios";
-    }
-/*     .jumbotron-h2{
-        padding-bottom: 5rem;
-        padding-top: 1rem;
-    }
-    .jumbotron-h3{
-        padding-left: 10px;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        .lentesDeSol, .lentesRecetados, .accesorios{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
     } */
 }

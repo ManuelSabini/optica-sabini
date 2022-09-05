@@ -1,3 +1,26 @@
+.nosotros{
+    .fotosnosotros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+$fotosnosotros:(
+    nosotros1: url("../assets/fotos/nosotros/profesional_de_la_salud.jpeg"),
+    nosotros2: url("../assets/fotos/nosotros/retinoscopy-5521411_1920.jpg")
+);
+
+@each $nosotros, $url in $fotosnosotros {
+    ##{$nosotros}{
+        width: 380px;
+        height: 260px;
+        min-height: 120px;
+        background-image: $url;
+        background-position: center;
+        background-size: cover;
+    }
+}
 /* .nosotros{
     height: auto;
     border: black solid 1px;

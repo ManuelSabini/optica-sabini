@@ -7,10 +7,12 @@
 }
 
 /* Algunas constantes que se van a utilizar en todo el proyecto */
+/* #3b8ac3; */
+/* #3b4856; */
 /* Header */
 .header {
   grid-area: header;
-  background-color: #3b8ac3;
+  background-color: #0069a4;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,7 +36,7 @@
 
 /* Barra de Navegacion */
 .barraNavegacion ul {
-  background-color: #3b8ac3;
+  background-color: #0069a4;
   padding-top: 25px;
   padding-left: 10px;
 }
@@ -47,7 +49,7 @@
 .barraNavegacion ul li a {
   text-decoration: none;
   color: whitesmoke;
-  background-color: #3b8ac3;
+  background-color: #0069a4;
   border: black solid 1px;
   border-radius: 0px;
   padding: 5px;
@@ -63,17 +65,15 @@
 
 /* Body y algunas definiciones comunes a todas las paginas del sitio */
 body {
-  /* background-color: rgb(199, 191, 191); */
   background-image: url(../assets/background/background-2551501_1920.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: none;
 }
 
 section {
   border: black solid 1px;
   border-radius: 3px;
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: rgba(245, 245, 245, 0.4);
   padding: 15px;
   margin: 5px;
 }
@@ -208,6 +208,7 @@ h3 {
 
 /* Contenido de pagina donde encontrarnos */
 .dondeEncontrarnos .row {
+  width: 100%;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -218,9 +219,9 @@ h3 {
 /* Contenido de pagina productos */
 /* Importo Jumbotron */
 .jumbotron-h2, .productos h2 {
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
   padding-top: 1rem;
-  background-color: #3b4856;
+  background-color: rgb(5, 5, 5);
   color: whitesmoke;
 }
 
@@ -234,6 +235,10 @@ h3 {
   color: whitesmoke;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .productos {
   display: block;
 }
@@ -244,54 +249,15 @@ h3 {
   font-size: x-large;
 }
 .productos article {
-  overflow: scroll;
+  width: 100%;
 }
 .productos .lentesDeSol, .productos .lentesRecetados, .productos .accesorios {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
   /* Aca mediante MAPS y EXTEND vamos a definir a todos los productos */
-  /* #producto1{
-      background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
-      background-position: center;
-      background-size: cover;
-  }
-  #producto2{
-      background-image: url("../assets/fotos/productos/mara-lente-sol.webp");
-      background-position: center;
-      background-size: cover;
-  }
-  #producto3{
-      background-image: url("../assets/fotos/productos/valdez-receta.jpg");
-      background-position: center;
-      background-size: cover;
-  }
-  #producto4{
-      background-image: url("../assets/fotos/productos/valdes-receta.jpg");
-      background-position: center;
-      background-size: cover;
-  }
-  #producto5{
-      background-image: url("../assets/fotos/productos/union_pacific_receta.jpg");
-      background-position: center;
-      background-size: cover;
-  }
-  #producto6{
-      background-image: url("../assets/fotos/productos/lentes-litio.jpg");
-      background-position: center;
-      background-size: cover;
-  }
-  #producto7{
-      background-image: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg");
-      background-position: center;
-      background-size: cover;
-  }
-  #producto8{
-      background-image: url("../assets/fotos/productos/cordones.jpg");
-      background-position: center;
-      background-size: cover;
-  } */
 }
 .productos .lentesDeSol div, .productos .lentesRecetados div, .productos .accesorios div {
   width: 260px;
@@ -302,37 +268,46 @@ h3 {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
-.productos .lentesDeSol div .miniatura, .productos .lentesDeSol div #producto8, .productos .lentesDeSol div #producto7, .productos .lentesDeSol div #producto6, .productos .lentesDeSol div #producto5, .productos .lentesDeSol div #producto4, .productos .lentesDeSol div #producto3, .productos .lentesDeSol div #producto2, .productos .lentesDeSol div #producto1, .productos .lentesRecetados div .miniatura, .productos .lentesRecetados div #producto8, .productos .lentesRecetados div #producto7, .productos .lentesRecetados div #producto6, .productos .lentesRecetados div #producto5, .productos .lentesRecetados div #producto4, .productos .lentesRecetados div #producto3, .productos .lentesRecetados div #producto2, .productos .lentesRecetados div #producto1, .productos .accesorios div .miniatura, .productos .accesorios div #producto8, .productos .accesorios div #producto7, .productos .accesorios div #producto6, .productos .accesorios div #producto5, .productos .accesorios div #producto4, .productos .accesorios div #producto3, .productos .accesorios div #producto2, .productos .accesorios div #producto1 {
+.productos .lentesDeSol div .miniatura, .productos .lentesDeSol div #productoC2, .productos .lentesDeSol div #productoC1, .productos .lentesDeSol div #productoB3, .productos .lentesDeSol div #productoB2, .productos .lentesDeSol div #productoB1, .productos .lentesDeSol div #productoA6, .productos .lentesDeSol div #productoA5, .productos .lentesDeSol div #productoA4, .productos .lentesDeSol div #productoA3, .productos .lentesDeSol div #productoA2, .productos .lentesDeSol div #productoA1, .productos .lentesRecetados div .miniatura, .productos .lentesRecetados div #productoC2, .productos .lentesRecetados div #productoC1, .productos .lentesRecetados div #productoB3, .productos .lentesRecetados div #productoB2, .productos .lentesRecetados div #productoB1, .productos .lentesRecetados div #productoA6, .productos .lentesRecetados div #productoA5, .productos .lentesRecetados div #productoA4, .productos .lentesRecetados div #productoA3, .productos .lentesRecetados div #productoA2, .productos .lentesRecetados div #productoA1, .productos .accesorios div .miniatura, .productos .accesorios div #productoC2, .productos .accesorios div #productoC1, .productos .accesorios div #productoB3, .productos .accesorios div #productoB2, .productos .accesorios div #productoB1, .productos .accesorios div #productoA6, .productos .accesorios div #productoA5, .productos .accesorios div #productoA4, .productos .accesorios div #productoA3, .productos .accesorios div #productoA2, .productos .accesorios div #productoA1 {
   width: 230px;
   height: 150px;
   margin: 0;
   background-position: center;
   background-size: cover;
 }
-.productos .lentesDeSol #producto1, .productos .lentesRecetados #producto1, .productos .accesorios #producto1 {
+.productos .lentesDeSol #productoA1, .productos .lentesRecetados #productoA1, .productos .accesorios #productoA1 {
   background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
 }
-.productos .lentesDeSol #producto2, .productos .lentesRecetados #producto2, .productos .accesorios #producto2 {
-  background-image: url("../assets/fotos/productos/mara-lente-sol.webp");
+.productos .lentesDeSol #productoA2, .productos .lentesRecetados #productoA2, .productos .accesorios #productoA2 {
+  background-image: url("../assets/fotos/productos/mara-lente-sol.jpg");
 }
-.productos .lentesDeSol #producto3, .productos .lentesRecetados #producto3, .productos .accesorios #producto3 {
+.productos .lentesDeSol #productoA3, .productos .lentesRecetados #productoA3, .productos .accesorios #productoA3 {
   background-image: url("../assets/fotos/productos/valdez-receta.jpg");
 }
-.productos .lentesDeSol #producto4, .productos .lentesRecetados #producto4, .productos .accesorios #producto4 {
+.productos .lentesDeSol #productoA4, .productos .lentesRecetados #productoA4, .productos .accesorios #productoA4 {
+  background-image: url("../assets/fotos/productos/D_NQ_NP_786286-MLA46233536589_062021-O.jpg");
+}
+.productos .lentesDeSol #productoA5, .productos .lentesRecetados #productoA5, .productos .accesorios #productoA5 {
+  background-image: url("../assets/fotos/productos/D_NQ_NP_2X_957470-MLA45538941816_042021-F.jpg");
+}
+.productos .lentesDeSol #productoA6, .productos .lentesRecetados #productoA6, .productos .accesorios #productoA6 {
+  background-image: url("../assets/fotos/productos/38248696-gafas-de-sol-classic-con-lentes-de-color-rosa-sobre-fondo-blanco-con-saturación-camino-.jpg");
+}
+.productos .lentesDeSol #productoB1, .productos .lentesRecetados #productoB1, .productos .accesorios #productoB1 {
   background-image: url("../assets/fotos/productos/valdes-receta.jpg");
 }
-.productos .lentesDeSol #producto5, .productos .lentesRecetados #producto5, .productos .accesorios #producto5 {
+.productos .lentesDeSol #productoB2, .productos .lentesRecetados #productoB2, .productos .accesorios #productoB2 {
   background-image: url("../assets/fotos/productos/union_pacific_receta.jpg");
 }
-.productos .lentesDeSol #producto6, .productos .lentesRecetados #producto6, .productos .accesorios #producto6 {
+.productos .lentesDeSol #productoB3, .productos .lentesRecetados #productoB3, .productos .accesorios #productoB3 {
   background-image: url("../assets/fotos/productos/lentes-litio.jpg");
 }
-.productos .lentesDeSol #producto7, .productos .lentesRecetados #producto7, .productos .accesorios #producto7 {
+.productos .lentesDeSol #productoC1, .productos .lentesRecetados #productoC1, .productos .accesorios #productoC1 {
   background-image: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg");
 }
-.productos .lentesDeSol #producto8, .productos .lentesRecetados #producto8, .productos .accesorios #producto8 {
+.productos .lentesDeSol #productoC2, .productos .lentesRecetados #productoC2, .productos .accesorios #productoC2 {
   background-image: url("../assets/fotos/productos/cordones.jpg");
 }
 .productos .lentesDeSol {
@@ -343,7 +318,6 @@ h3 {
 }
 .productos .accesorios {
   grid-area: accesorios;
-  flex-direction: column;
 }
 
 #titulo_productos {
@@ -361,9 +335,66 @@ h3 {
 /* Contenido de pagina servicios */
 .servicios section {
   padding-left: 30px;
+  background-color: rgba(245, 245, 245, 0.4);
+}
+.servicios .miniaturas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#servicios1 {
+  width: 370px;
+  height: 200px;
+  min-height: 120px;
+  background-image: url("../assets/fotos/nosotros/display-3262303_1920.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#servicios2 {
+  width: 370px;
+  height: 200px;
+  min-height: 120px;
+  background-image: url("../assets/fotos/nosotros/glass-3097577_1920.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#servicios3 {
+  width: 370px;
+  height: 200px;
+  min-height: 120px;
+  background-image: url("../assets/fotos/nosotros/lens-4818786_1920.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 /* Contenido de pagina nosotros */
+.nosotros .fotosnosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#nosotros1 {
+  width: 380px;
+  height: 260px;
+  min-height: 120px;
+  background-image: url("../assets/fotos/nosotros/profesional_de_la_salud.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+#nosotros2 {
+  width: 380px;
+  height: 260px;
+  min-height: 120px;
+  background-image: url("../assets/fotos/nosotros/retinoscopy-5521411_1920.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 /* .nosotros{
     height: auto;
     border: black solid 1px;
@@ -375,7 +406,7 @@ h3 {
 /* Footer */
 .footer {
   grid-area: footer;
-  background-color: #3b8ac3;
+  background-color: #0069a4;
   text-align: center;
   padding-top: 25px;
   margin-top: 10px;
@@ -420,26 +451,23 @@ h3 {
   .productos article {
     overflow: auto;
   }
-  .productos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 110px 1fr 110px 1fr 110px 1fr;
-    grid-template-areas: "titulo_productos" "titulo_lentesDeSol" "lentesDeSol" "titulo_lentesRecetados" "lentesRecetados" "titulo_accesorios" "accesorios";
-  }
-  .productos .lentesDeSol, .productos .lentesRecetados, .productos .accesorios {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-  /*     .jumbotron-h2{
-          padding-bottom: 5rem;
-          padding-top: 1rem;
-      }
-      .jumbotron-h3{
-          padding-left: 10px;
-          padding-bottom: 1rem;
-          padding-top: 1rem;
+  /*     .productos{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 150px 80px auto 80px auto 80px auto;
+          grid-template-areas: "titulo_productos"
+          "titulo_lentesDeSol"
+          "lentesDeSol"
+          "titulo_lentesRecetados"
+          "lentesRecetados"
+          "titulo_accesorios"
+          "accesorios";
+          .lentesDeSol, .lentesRecetados, .accesorios{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              flex-wrap: nowrap;
+          }
       } */
 }
 

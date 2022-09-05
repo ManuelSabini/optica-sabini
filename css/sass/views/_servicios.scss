@@ -1,5 +1,28 @@
 .servicios{
     section{
         padding-left: 30px;
+        background-color: $colorsection;
+    }
+    .miniaturas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
+$fotosservicios:(
+    servicios1: url("../assets/fotos/nosotros/display-3262303_1920.jpg"),
+    servicios2: url("../assets/fotos/nosotros/glass-3097577_1920.jpg"),
+    servicios3: url("../assets/fotos/nosotros/lens-4818786_1920.jpg")
+);
+
+@each $foto, $url in $fotosservicios {
+    ##{$foto}{
+        width: 370px;
+        height: 200px;
+        min-height: 120px;
+        background-image: $url;
+        background-position: center;
+        background-size: cover;
+    }
+}
+

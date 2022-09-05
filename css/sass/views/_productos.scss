@@ -1,6 +1,8 @@
 /* Importo Jumbotron */
 @import "../components/jumbotron";
-
+body{
+    overflow-x: hidden;
+}
 .productos{
     display: block;
     h2{
@@ -12,13 +14,14 @@
         font-size: x-large;
     }
     article{
-        overflow: scroll;
+        width: 100%;
     }
     .lentesDeSol, .lentesRecetados, .accesorios{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: center;
         @import "../components/card";
     }
     .lentesDeSol{
@@ -29,7 +32,6 @@
     }
     .accesorios{
         grid-area: accesorios;
-        flex-direction: column;
     }
 }
 #titulo_productos{
