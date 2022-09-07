@@ -7,8 +7,6 @@
 }
 
 /* Algunas constantes que se van a utilizar en todo el proyecto */
-/* #3b8ac3; */
-/* #3b4856; */
 /* Header */
 .header {
   grid-area: header;
@@ -73,7 +71,7 @@ body {
 section {
   border: black solid 1px;
   border-radius: 3px;
-  background-color: rgba(245, 245, 245, 0.4);
+  background-color: rgba(245, 245, 245, 0.55);
   padding: 15px;
   margin: 5px;
 }
@@ -293,7 +291,7 @@ body {
   background-image: url("../assets/fotos/productos/D_NQ_NP_2X_957470-MLA45538941816_042021-F.jpg");
 }
 .productos .lentesDeSol #productoA6, .productos .lentesRecetados #productoA6, .productos .accesorios #productoA6 {
-  background-image: url("../assets/fotos/productos/38248696-gafas-de-sol-classic-con-lentes-de-color-rosa-sobre-fondo-blanco-con-saturación-camino-.jpg");
+  background-image: url("../assets/fotos/productos/38248696-gafas-de-sol-classic-con-lentes-de-color-rosa-sobre-fondo-blanco-con-saturacion-camino-.jpg");
 }
 .productos .lentesDeSol #productoB1, .productos .lentesRecetados #productoB1, .productos .accesorios #productoB1 {
   background-image: url("../assets/fotos/productos/valdes-receta.jpg");
@@ -335,7 +333,7 @@ body {
 /* Contenido de pagina servicios */
 .servicios section {
   padding-left: 30px;
-  background-color: rgba(245, 245, 245, 0.4);
+  background-color: rgba(245, 245, 245, 0.55);
 }
 .servicios .miniaturas {
   display: flex;
