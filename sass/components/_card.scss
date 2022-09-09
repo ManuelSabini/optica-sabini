@@ -8,18 +8,23 @@ div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    .miniatura{
+    .miniaturaProducto{
         width: 230px;
         height: 150px;
-        margin: 0;
-        background-position: center;
-        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        img{
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            object-fit: cover;
+        }
     }
 }
 
 /* Aca mediante MAPS y EXTEND vamos a definir a todos los productos */
 
-$productos:(
+/* $productos:(
     productoA1: url("../assets/fotos/productos/union_pacific_sol.jpg"),
     productoA2: url("../assets/fotos/productos/mara-lente-sol.jpg"),
     productoA3: url("../assets/fotos/productos/valdez-receta.jpg"),
@@ -31,11 +36,11 @@ $productos:(
     productoB3: url("../assets/fotos/productos/lentes-litio.jpg"),
     productoC1: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg"),
     productoC2: url("../assets/fotos/productos/cordones.jpg")
-);
-
+); */
+/* 
 @each $articulo, $url in $productos {
-    ##{$articulo}{
+    {$articulo}{
         @extend .miniatura;
         background-image: $url;
     }
-}
+} */

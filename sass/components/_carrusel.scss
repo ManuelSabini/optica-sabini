@@ -1,11 +1,21 @@
 .establecimiento{
     width: auto;
+    max-height: 100%;
     grid-area: establecimiento;
     div{
-        min-width: 220px;
-        min-height: 360px;
+        height: 100%;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            min-width: 220px;
+            min-height: 360px;
+            object-fit: cover;
+            max-height: 60vh;
+        }
     }
-    .perro{
+}
+/*     .perro{
         background-image: url("../assets/fotos/establecimiento/bordeaux-dog-217018_1280.jpg");
         background-position: center;
         background-size: cover;
@@ -39,5 +49,4 @@
         background-image: url("../assets/fotos/establecimiento/glasses-1052023_1920.jpg");
         background-position: center;
         background-size: cover;
-    }
-}
+    } */

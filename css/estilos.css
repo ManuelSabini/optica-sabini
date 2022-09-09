@@ -68,6 +68,10 @@ body {
   background-size: cover;
 }
 
+main {
+  min-height: calc(100vh - 105px - 110px);
+}
+
 section {
   border: black solid 1px;
   border-radius: 3px;
@@ -92,49 +96,58 @@ h3 {
 /* Contenido de pagina principal */
 .mainInicio {
   grid-area: mainInicio;
+  /*     .perro{
+          background-image: url("../assets/fotos/establecimiento/bordeaux-dog-217018_1280.jpg");
+          background-position: center;
+          background-size: cover;
+      }
+      .nene{
+          background-image: url("../assets/fotos/establecimiento/kid-1508121_1920.jpg");
+          background-position: center;
+          background-size: cover;
+      }
+      .amigas{
+          background-image: url("../assets/fotos/establecimiento/people-2596150_1920.jpg");
+          background-position: center;
+          background-size: cover;
+      }
+      .hombre1{
+          background-image: url("../assets/fotos/establecimiento/eyeglasses-1866734_1920.jpg");
+          background-position: center;
+          background-size: cover;
+      }
+      .hombre2{
+          background-image: url("../assets/fotos/establecimiento/happy-1836445_1920.jpg");
+          background-position: center;
+          background-size: cover;
+      }
+      .mujer1{
+          background-image: url("../assets/fotos/establecimiento/woman-1869116_1920.jpg");
+          background-position: center;
+          background-size: cover;
+      }
+      .anteojoslibro{
+          background-image: url("../assets/fotos/establecimiento/glasses-1052023_1920.jpg");
+          background-position: center;
+          background-size: cover;
+      } */
 }
 .mainInicio .establecimiento {
   width: auto;
+  max-height: 100%;
   grid-area: establecimiento;
 }
 .mainInicio .establecimiento div {
+  height: 100%;
+  width: 100%;
+}
+.mainInicio .establecimiento div img {
+  height: 100%;
+  width: 100%;
   min-width: 220px;
   min-height: 360px;
-}
-.mainInicio .establecimiento .perro {
-  background-image: url("../assets/fotos/establecimiento/bordeaux-dog-217018_1280.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.mainInicio .establecimiento .nene {
-  background-image: url("../assets/fotos/establecimiento/kid-1508121_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.mainInicio .establecimiento .amigas {
-  background-image: url("../assets/fotos/establecimiento/people-2596150_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.mainInicio .establecimiento .hombre1 {
-  background-image: url("../assets/fotos/establecimiento/eyeglasses-1866734_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.mainInicio .establecimiento .hombre2 {
-  background-image: url("../assets/fotos/establecimiento/happy-1836445_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.mainInicio .establecimiento .mujer1 {
-  background-image: url("../assets/fotos/establecimiento/woman-1869116_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.mainInicio .establecimiento .anteojoslibro {
-  background-image: url("../assets/fotos/establecimiento/glasses-1052023_1920.jpg");
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
+  max-height: 60vh;
 }
 
 .productosYServicios {
@@ -185,23 +198,17 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-.promocionesBancarias .descuentos {
+.promocionesBancarias .imgdesc .descuentos {
   margin: 25px;
   border: 1px solid black;
   display: flex;
   flex-wrap: nowrap;
   height: 225px;
   width: 300px;
-  background-position: center;
-  background-size: cover;
 }
-
-#banco_provincia {
-  background-image: url("../assets/fotos/promociones/banco_provincia.png");
-}
-
-#banco_icbc {
-  background-image: url("../assets/fotos/promociones/icbc.png");
+.promocionesBancarias .imgdesc .descuentos img {
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Contenido de pagina donde encontrarnos */
@@ -256,6 +263,26 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   /* Aca mediante MAPS y EXTEND vamos a definir a todos los productos */
+  /* $productos:(
+      productoA1: url("../assets/fotos/productos/union_pacific_sol.jpg"),
+      productoA2: url("../assets/fotos/productos/mara-lente-sol.jpg"),
+      productoA3: url("../assets/fotos/productos/valdez-receta.jpg"),
+      productoA4: url("../assets/fotos/productos/D_NQ_NP_786286-MLA46233536589_062021-O.jpg"),
+      productoA5: url("../assets/fotos/productos/D_NQ_NP_2X_957470-MLA45538941816_042021-F.jpg"),
+      productoA6: url("../assets/fotos/productos/38248696-gafas-de-sol-classic.jpg"),
+      productoB1: url("../assets/fotos/productos/valdes-receta.jpg"),
+      productoB2: url("../assets/fotos/productos/union_pacific_receta.jpg"),
+      productoB3: url("../assets/fotos/productos/lentes-litio.jpg"),
+      productoC1: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg"),
+      productoC2: url("../assets/fotos/productos/cordones.jpg")
+  ); */
+  /* 
+  @each $articulo, $url in $productos {
+      {$articulo}{
+          @extend .miniatura;
+          background-image: $url;
+      }
+  } */
 }
 .productos .lentesDeSol div, .productos .lentesRecetados div, .productos .accesorios div {
   width: 260px;
@@ -268,45 +295,17 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.productos .lentesDeSol div .miniatura, .productos .lentesDeSol div #productoC2, .productos .lentesDeSol div #productoC1, .productos .lentesDeSol div #productoB3, .productos .lentesDeSol div #productoB2, .productos .lentesDeSol div #productoB1, .productos .lentesDeSol div #productoA6, .productos .lentesDeSol div #productoA5, .productos .lentesDeSol div #productoA4, .productos .lentesDeSol div #productoA3, .productos .lentesDeSol div #productoA2, .productos .lentesDeSol div #productoA1, .productos .lentesRecetados div .miniatura, .productos .lentesRecetados div #productoC2, .productos .lentesRecetados div #productoC1, .productos .lentesRecetados div #productoB3, .productos .lentesRecetados div #productoB2, .productos .lentesRecetados div #productoB1, .productos .lentesRecetados div #productoA6, .productos .lentesRecetados div #productoA5, .productos .lentesRecetados div #productoA4, .productos .lentesRecetados div #productoA3, .productos .lentesRecetados div #productoA2, .productos .lentesRecetados div #productoA1, .productos .accesorios div .miniatura, .productos .accesorios div #productoC2, .productos .accesorios div #productoC1, .productos .accesorios div #productoB3, .productos .accesorios div #productoB2, .productos .accesorios div #productoB1, .productos .accesorios div #productoA6, .productos .accesorios div #productoA5, .productos .accesorios div #productoA4, .productos .accesorios div #productoA3, .productos .accesorios div #productoA2, .productos .accesorios div #productoA1 {
+.productos .lentesDeSol div .miniaturaProducto, .productos .lentesRecetados div .miniaturaProducto, .productos .accesorios div .miniaturaProducto {
   width: 230px;
   height: 150px;
-  margin: 0;
-  background-position: center;
-  background-size: cover;
+  margin: 0px;
+  padding: 0px;
 }
-.productos .lentesDeSol #productoA1, .productos .lentesRecetados #productoA1, .productos .accesorios #productoA1 {
-  background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
-}
-.productos .lentesDeSol #productoA2, .productos .lentesRecetados #productoA2, .productos .accesorios #productoA2 {
-  background-image: url("../assets/fotos/productos/mara-lente-sol.jpg");
-}
-.productos .lentesDeSol #productoA3, .productos .lentesRecetados #productoA3, .productos .accesorios #productoA3 {
-  background-image: url("../assets/fotos/productos/valdez-receta.jpg");
-}
-.productos .lentesDeSol #productoA4, .productos .lentesRecetados #productoA4, .productos .accesorios #productoA4 {
-  background-image: url("../assets/fotos/productos/D_NQ_NP_786286-MLA46233536589_062021-O.jpg");
-}
-.productos .lentesDeSol #productoA5, .productos .lentesRecetados #productoA5, .productos .accesorios #productoA5 {
-  background-image: url("../assets/fotos/productos/D_NQ_NP_2X_957470-MLA45538941816_042021-F.jpg");
-}
-.productos .lentesDeSol #productoA6, .productos .lentesRecetados #productoA6, .productos .accesorios #productoA6 {
-  background-image: url("../assets/fotos/productos/38248696-gafas-de-sol-classic.jpg");
-}
-.productos .lentesDeSol #productoB1, .productos .lentesRecetados #productoB1, .productos .accesorios #productoB1 {
-  background-image: url("../assets/fotos/productos/valdes-receta.jpg");
-}
-.productos .lentesDeSol #productoB2, .productos .lentesRecetados #productoB2, .productos .accesorios #productoB2 {
-  background-image: url("../assets/fotos/productos/union_pacific_receta.jpg");
-}
-.productos .lentesDeSol #productoB3, .productos .lentesRecetados #productoB3, .productos .accesorios #productoB3 {
-  background-image: url("../assets/fotos/productos/lentes-litio.jpg");
-}
-.productos .lentesDeSol #productoC1, .productos .lentesRecetados #productoC1, .productos .accesorios #productoC1 {
-  background-image: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg");
-}
-.productos .lentesDeSol #productoC2, .productos .lentesRecetados #productoC2, .productos .accesorios #productoC2 {
-  background-image: url("../assets/fotos/productos/cordones.jpg");
+.productos .lentesDeSol div .miniaturaProducto img, .productos .lentesRecetados div .miniaturaProducto img, .productos .accesorios div .miniaturaProducto img {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  object-fit: cover;
 }
 .productos .lentesDeSol {
   grid-area: lentesDeSol;
@@ -335,72 +334,20 @@ body {
   padding-left: 30px;
   background-color: rgba(245, 245, 245, 0.55);
 }
-.servicios .miniaturas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#servicios1 {
-  width: 370px;
-  height: 200px;
-  min-height: 120px;
-  background-image: url("../assets/fotos/nosotros/display-3262303_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#servicios2 {
-  width: 370px;
-  height: 200px;
-  min-height: 120px;
-  background-image: url("../assets/fotos/nosotros/glass-3097577_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-#servicios3 {
-  width: 370px;
-  height: 200px;
-  min-height: 120px;
-  background-image: url("../assets/fotos/nosotros/lens-4818786_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
 
 /* Contenido de pagina nosotros */
-.nosotros .fotosnosotros {
+/* Estas clases sirve para definir las miniatura de las paginas Servicios y nosotros */
+.miniaturas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-#nosotros1 {
+.miniaturas .fotosMiniatura img {
   width: 380px;
   height: 260px;
   min-height: 120px;
-  background-image: url("../assets/fotos/nosotros/profesional_de_la_salud.jpeg");
-  background-position: center;
-  background-size: cover;
 }
 
-#nosotros2 {
-  width: 380px;
-  height: 260px;
-  min-height: 120px;
-  background-image: url("../assets/fotos/nosotros/retinoscopy-5521411_1920.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-/* .nosotros{
-    height: auto;
-    border: black solid 1px;
-    border-radius: 3px;
-    background-color: $color2;
-    padding: 15px;
-    display: block;
-} */
 /* Footer */
 .footer {
   grid-area: footer;

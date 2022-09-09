@@ -1,0 +1,13 @@
+/* Estas clases sirve para definir las miniatura de las paginas Servicios y nosotros */
+.miniaturas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .fotosMiniatura{
+            img{
+                width: 380px;
+                height: 260px;
+                min-height: 120px;
+            }
+    }
+}
