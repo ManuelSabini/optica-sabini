@@ -168,7 +168,7 @@ h3 {
   min-height: 120px;
   background-position: center;
   background-size: cover;
-  background-image: url("../assets/fotos/establecimiento/lens-4818786_1920.jpg");
+  background-image: url("./assets/fotos/establecimiento/lens-4818786_1920.jpg");
 }
 
 #foto2 {
@@ -177,7 +177,7 @@ h3 {
   min-height: 120px;
   background-position: center;
   background-size: cover;
-  background-image: url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
+  background-image: url("./assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
 }
 
 #foto3 {
@@ -186,7 +186,7 @@ h3 {
   min-height: 120px;
   background-position: center;
   background-size: cover;
-  background-image: url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg");
+  background-image: url("./assets/fotos/establecimiento/glasses-6336907_1920.jpg");
 }
 
 .promocionesBancarias {

@@ -23,13 +23,13 @@
 }
 
 #foto1{
-    @include miniFotosEstilos(url("../assets/fotos/establecimiento/lens-4818786_1920.jpg"));
+    @include miniFotosEstilos(url("./assets/fotos/establecimiento/lens-4818786_1920.jpg"));
 }
 #foto2{
-    @include miniFotosEstilos(url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg"));
+    @include miniFotosEstilos(url("./assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg"));
 }
 #foto3{
-    @include miniFotosEstilos(url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg"));
+    @include miniFotosEstilos(url("./assets/fotos/establecimiento/glasses-6336907_1920.jpg"));
 }
 
 .promocionesBancarias{
