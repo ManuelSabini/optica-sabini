@@ -21,14 +21,22 @@
         article{
             overflow:auto;}
     }
-    .productos{
+/*     .productos{
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 80px 40px 1fr 40px 1fr;
-        grid-template-areas: "titulo_productos titulo_accesorios"
-        "titulo_lentesDeSol accesorios"
-        "lentesDeSol accesorios"
-        "titulo_lentesRecetados accesorios"
-        "lentesRecetados accesorios";
-    }
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 80px auto 80px auto 80px auto;
+        grid-template-areas: "titulo_productos"
+        "titulo_lentesDeSol"
+        "lentesDeSol"
+        "titulo_lentesRecetados"
+        "lentesRecetados"
+        "titulo_accesorios"
+        "accesorios";
+        .lentesDeSol, .lentesRecetados, .accesorios{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+    } */
 }

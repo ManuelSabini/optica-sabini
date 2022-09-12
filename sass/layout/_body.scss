@@ -1,14 +1,15 @@
 body{
-    background-color: rgb(199, 191, 191);
     background-image: url(../assets/background/background-2551501_1920.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: none;
+}
+main{
+    min-height: calc(100vh - 105px - 110px);
 }
 section{
-    border: black solid 1px;
+    border: $colorborder;
     border-radius: 3px;
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: $colorsection;
     padding: 15px;
     margin: 5px;
 }

@@ -12,7 +12,6 @@
         grid-area: masFotos;
     }
 
-
 /* Se añade Mixin */
 @mixin miniFotosEstilos($imagen) {  
     width: 100%;
@@ -32,6 +31,7 @@
 #foto3{
     @include miniFotosEstilos(url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg"));
 }
+
 .promocionesBancarias{
     grid-area: promociones;
     .imgdesc{
@@ -39,22 +39,18 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        .descuentos{
+            margin: 25px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: nowrap;
+            height: 225px;
+            width: 300px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     }
-    .descuentos{
-        margin: 25px;
-        border: 1px solid black;
-        display: flex;
-        flex-wrap: nowrap;
-        height: 225px;
-        width: 300px;
-        background-position: center;
-        background-size: cover;
-    }
-}
-
-#banco_provincia{
-    background-image: url("../assets/fotos/promociones/banco_provincia.png");
-}
-#banco_icbc{
-    background-image: url("../assets/fotos/promociones/icbc.png");
 }
