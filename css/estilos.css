@@ -147,7 +147,7 @@ h3 {
   min-width: 220px;
   min-height: 360px;
   object-fit: cover;
-  max-height: 60vh;
+  max-height: 65vh;
 }
 
 .productosYServicios {
@@ -208,6 +208,7 @@ h3 {
 }
 .promocionesBancarias .imgdesc .descuentos img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 

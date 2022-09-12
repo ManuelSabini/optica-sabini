@@ -12,7 +12,6 @@
         grid-area: masFotos;
     }
 
-
 /* Se añade Mixin */
 @mixin miniFotosEstilos($imagen) {  
     width: 100%;
@@ -32,6 +31,7 @@
 #foto3{
     @include miniFotosEstilos(url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg"));
 }
+
 .promocionesBancarias{
     grid-area: promociones;
     .imgdesc{
@@ -48,6 +48,7 @@
             width: 300px;
             img{
                 height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
         }
