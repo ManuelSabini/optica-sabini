@@ -6,12 +6,12 @@
             margin-top: 50px;
             height: 30px;
             width: 75%;
-            background-color: $color2;
+            background-color: black;
             align-self: center;
             border-radius: 15px;
             p{
                 text-align: center;
-                color: $colorborder;
+                color: $color2;
                 text-shadow: 1px;
                 font-size: medium;
             }
@@ -31,7 +31,7 @@
 /* Aca mediante MAPS y EXTEND vamos a definir a todos las minifotos*/
 
 $productos:(
-    LentesDeSol: url("../assets/fotos/productos/union_pacific_sol.jpg"),
+    LentesDeSol: url("../assets/fotos/imagenesindex/sunglasses-1370256_1920.jpg"),
     LentesRecetados: url("../assets/fotos/imagenesindex/glasses-6336907_1920.jpg"),
     LentesDeContacto: url("../assets/fotos/imagenesindex/lens-4818786_1920.jpg"),
     Binoculares: url("../assets/fotos/imagenesindex/binoculars-3643343_1920.jpg"),

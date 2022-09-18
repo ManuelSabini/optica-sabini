@@ -129,13 +129,13 @@ h3 {
   margin-top: 50px;
   height: 30px;
   width: 75%;
-  background-color: whitesmoke;
+  background-color: black;
   align-self: center;
   border-radius: 15px;
 }
 .mainInicio .productosYServicios .miniFotosPyS div div p {
   text-align: center;
-  color: black solid 1px;
+  color: whitesmoke;
   text-shadow: 1px;
   font-size: medium;
 }
@@ -149,7 +149,7 @@ h3 {
   filter: grayscale(100%);
 }
 .mainInicio .productosYServicios #LentesDeSol {
-  background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
+  background-image: url("../assets/fotos/imagenesindex/sunglasses-1370256_1920.jpg");
 }
 .mainInicio .productosYServicios #LentesRecetados {
   background-image: url("../assets/fotos/imagenesindex/glasses-6336907_1920.jpg");
@@ -264,27 +264,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  /* Aca mediante MAPS y EXTEND vamos a definir a todos los productos */
-  /* $productos:(
-      productoA1: url("../assets/fotos/productos/union_pacific_sol.jpg"),
-      productoA2: url("../assets/fotos/productos/mara-lente-sol.jpg"),
-      productoA3: url("../assets/fotos/productos/valdez-receta.jpg"),
-      productoA4: url("../assets/fotos/productos/D_NQ_NP_786286-MLA46233536589_062021-O.jpg"),
-      productoA5: url("../assets/fotos/productos/D_NQ_NP_2X_957470-MLA45538941816_042021-F.jpg"),
-      productoA6: url("../assets/fotos/productos/38248696-gafas-de-sol-classic.jpg"),
-      productoB1: url("../assets/fotos/productos/valdes-receta.jpg"),
-      productoB2: url("../assets/fotos/productos/union_pacific_receta.jpg"),
-      productoB3: url("../assets/fotos/productos/lentes-litio.jpg"),
-      productoC1: url("../assets/fotos/productos/estuche-de-lentes-en-silicona.jpg"),
-      productoC2: url("../assets/fotos/productos/cordones.jpg")
-  ); */
-  /* 
-  @each $articulo, $url in $productos {
-      {$articulo}{
-          @extend .miniatura;
-          background-image: $url;
-      }
-  } */
 }
 .productos .lentesDeSol div, .productos .lentesRecetados div, .productos .accesorios div {
   width: 260px;
@@ -398,24 +377,6 @@ body {
   .productos article {
     overflow: auto;
   }
-  /*     .productos{
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: 150px 80px auto 80px auto 80px auto;
-          grid-template-areas: "titulo_productos"
-          "titulo_lentesDeSol"
-          "lentesDeSol"
-          "titulo_lentesRecetados"
-          "lentesRecetados"
-          "titulo_accesorios"
-          "accesorios";
-          .lentesDeSol, .lentesRecetados, .accesorios{
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              flex-wrap: nowrap;
-          }
-      } */
 }
 
 /*# sourceMappingURL=estilos.css.map */
