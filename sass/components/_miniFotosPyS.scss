@@ -1,0 +1,49 @@
+.miniFotosPyS{
+    div{
+        display: flex;
+        flex-direction: column;
+        div{
+            margin-top: 50px;
+            height: 30px;
+            width: 75%;
+            background-color: $color2;
+            align-self: center;
+            border-radius: 15px;
+            p{
+                text-align: center;
+                color: $colorborder;
+                text-shadow: 1px;
+                font-size: medium;
+            }
+        }
+    }
+}
+.miniatura{
+    width: 210px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    &:hover{
+        filter: grayscale(100%);
+    }
+}
+
+/* Aca mediante MAPS y EXTEND vamos a definir a todos las minifotos*/
+
+$productos:(
+    LentesDeSol: url("../assets/fotos/productos/union_pacific_sol.jpg"),
+    LentesRecetados: url("../assets/fotos/imagenesindex/glasses-6336907_1920.jpg"),
+    LentesDeContacto: url("../assets/fotos/imagenesindex/lens-4818786_1920.jpg"),
+    Binoculares: url("../assets/fotos/imagenesindex/binoculars-3643343_1920.jpg"),
+    Lupas: url("../assets/fotos/imagenesindex/a-book-3045205_1920.jpg"),
+    Soluciones: url("../assets/fotos/imagenesindex/contact-lenses-4792983_1920.jpg"),
+    ProtesisOculares: url("../assets/fotos/imagenesindex/protesis_ocular.jpg"),
+    Accesorios: url("../assets/fotos/imagenesindex/glasses-1124417_1920.jpg"),
+);
+
+@each $articulo, $url in $productos {
+    ##{$articulo}{
+        @extend .miniatura;
+        background-image: $url;
+    }
+}

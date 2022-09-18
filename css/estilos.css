@@ -96,40 +96,8 @@ h3 {
 /* Contenido de pagina principal */
 .mainInicio {
   grid-area: mainInicio;
-  /*     .perro{
-          background-image: url("../assets/fotos/establecimiento/bordeaux-dog-217018_1280.jpg");
-          background-position: center;
-          background-size: cover;
-      }
-      .nene{
-          background-image: url("../assets/fotos/establecimiento/kid-1508121_1920.jpg");
-          background-position: center;
-          background-size: cover;
-      }
-      .amigas{
-          background-image: url("../assets/fotos/establecimiento/people-2596150_1920.jpg");
-          background-position: center;
-          background-size: cover;
-      }
-      .hombre1{
-          background-image: url("../assets/fotos/establecimiento/eyeglasses-1866734_1920.jpg");
-          background-position: center;
-          background-size: cover;
-      }
-      .hombre2{
-          background-image: url("../assets/fotos/establecimiento/happy-1836445_1920.jpg");
-          background-position: center;
-          background-size: cover;
-      }
-      .mujer1{
-          background-image: url("../assets/fotos/establecimiento/woman-1869116_1920.jpg");
-          background-position: center;
-          background-size: cover;
-      }
-      .anteojoslibro{
-          background-image: url("../assets/fotos/establecimiento/glasses-1052023_1920.jpg");
-          background-position: center;
-          background-size: cover;
+  /*     .masFotosinicio{
+          grid-area: masFotos;
       } */
 }
 .mainInicio .establecimiento {
@@ -149,46 +117,79 @@ h3 {
   object-fit: cover;
   max-height: 65vh;
 }
-
-.productosYServicios {
+.mainInicio .productosYServicios {
   grid-area: productosYServicios;
+  /* Aca mediante MAPS y EXTEND vamos a definir a todos las minifotos*/
 }
-.productosYServicios ul {
-  margin-left: 20px;
+.mainInicio .productosYServicios .miniFotosPyS div {
+  display: flex;
+  flex-direction: column;
 }
-
-.masFotosinicio {
-  grid-area: masFotos;
+.mainInicio .productosYServicios .miniFotosPyS div div {
+  margin-top: 50px;
+  height: 30px;
+  width: 75%;
+  background-color: whitesmoke;
+  align-self: center;
+  border-radius: 15px;
+}
+.mainInicio .productosYServicios .miniFotosPyS div div p {
+  text-align: center;
+  color: black solid 1px;
+  text-shadow: 1px;
+  font-size: medium;
+}
+.mainInicio .productosYServicios .miniatura, .mainInicio .productosYServicios #Accesorios, .mainInicio .productosYServicios #ProtesisOculares, .mainInicio .productosYServicios #Soluciones, .mainInicio .productosYServicios #Lupas, .mainInicio .productosYServicios #Binoculares, .mainInicio .productosYServicios #LentesDeContacto, .mainInicio .productosYServicios #LentesRecetados, .mainInicio .productosYServicios #LentesDeSol {
+  width: 210px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+.mainInicio .productosYServicios .miniatura:hover, .mainInicio .productosYServicios #Accesorios:hover, .mainInicio .productosYServicios #ProtesisOculares:hover, .mainInicio .productosYServicios #Soluciones:hover, .mainInicio .productosYServicios #Lupas:hover, .mainInicio .productosYServicios #Binoculares:hover, .mainInicio .productosYServicios #LentesDeContacto:hover, .mainInicio .productosYServicios #LentesRecetados:hover, .mainInicio .productosYServicios #LentesDeSol:hover {
+  filter: grayscale(100%);
+}
+.mainInicio .productosYServicios #LentesDeSol {
+  background-image: url("../assets/fotos/productos/union_pacific_sol.jpg");
+}
+.mainInicio .productosYServicios #LentesRecetados {
+  background-image: url("../assets/fotos/imagenesindex/glasses-6336907_1920.jpg");
+}
+.mainInicio .productosYServicios #LentesDeContacto {
+  background-image: url("../assets/fotos/imagenesindex/lens-4818786_1920.jpg");
+}
+.mainInicio .productosYServicios #Binoculares {
+  background-image: url("../assets/fotos/imagenesindex/binoculars-3643343_1920.jpg");
+}
+.mainInicio .productosYServicios #Lupas {
+  background-image: url("../assets/fotos/imagenesindex/a-book-3045205_1920.jpg");
+}
+.mainInicio .productosYServicios #Soluciones {
+  background-image: url("../assets/fotos/imagenesindex/contact-lenses-4792983_1920.jpg");
+}
+.mainInicio .productosYServicios #ProtesisOculares {
+  background-image: url("../assets/fotos/imagenesindex/protesis_ocular.jpg");
+}
+.mainInicio .productosYServicios #Accesorios {
+  background-image: url("../assets/fotos/imagenesindex/glasses-1124417_1920.jpg");
+}
+.mainInicio .productosYServicios .miniFotosPyS {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Se añade Mixin */
-#foto1 {
-  width: 100%;
-  height: 33.3333333333%;
-  min-height: 120px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../assets/fotos/establecimiento/lens-4818786_1920.jpg");
+/* #foto1{
+    @include miniFotosEstilos(url("../assets/fotos/imagenesindex/lens-4818786_1920.jpg"));
 }
-
-#foto2 {
-  width: 100%;
-  height: 33.3333333333%;
-  min-height: 120px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../assets/fotos/establecimiento/contact-lenses-4792983_1920.jpg");
+#foto2{
+    @include miniFotosEstilos(url("../assets/fotos/imagenesindex/contact-lenses-4792983_1920.jpg"));
 }
-
-#foto3 {
-  width: 100%;
-  height: 33.3333333333%;
-  min-height: 120px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../assets/fotos/establecimiento/glasses-6336907_1920.jpg");
-}
-
+#foto3{
+    @include miniFotosEstilos(url("../assets/fotos/imagenesindex/glasses-6336907_1920.jpg"));
+} */
 .promocionesBancarias {
   grid-area: promociones;
 }
@@ -387,9 +388,9 @@ body {
   }
   .mainInicio {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "establecimiento establecimiento promociones" "productosYServicios masFotos promociones";
+    grid-template-areas: "establecimiento promociones" "productosYServicios promociones";
   }
   .accesorios {
     flex-direction: column;

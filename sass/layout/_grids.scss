@@ -9,10 +9,10 @@
     }
     .mainInicio{
         display:grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "establecimiento establecimiento promociones"
-        "productosYServicios masFotos promociones";
+        grid-template-areas: "establecimiento promociones"
+        "productosYServicios promociones";
     }
     .accesorios{
         flex-direction: column;
